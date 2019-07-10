@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Assignment 1_Constructor Function</title>
+    </head>
+    <body>
+        <script>
+            function createObject(){
+                var jsObject = new Object();
+                jsObject.Name =  "Bala";
+                jsObject.Height =  "180 cm";
+                jsObject.aboutYourSelf  =  function () {
+                    return ("I am " + this.Name + "." +"I am " + this.Height + " height.");
+                }
+                return jsObject;
+            }
+           
+            var me = createObject();
+            console.log(me.aboutYourSelf());
+        </script>
+        
+    </body>
+</html>
